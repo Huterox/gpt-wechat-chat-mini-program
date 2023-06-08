@@ -1,0 +1,12 @@
+<view class="page" style="background-image: url('../index/image/bi.jpg');">
+  <scroll-view style="height: 300px;" class="list" scroll-y="{{true}}" bindscrolltolower="scrollToLower">
+    <block wx:for="{{listData}}" wx:key="id">
+      <view class="item" data-id="{{item.itemid}}" bindtap="tapItem">
+        <view class="right">
+          <!-- 显示历史对话时间 -->
+          <text class="time">历史对话-{{item.saveTime}}</text>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+</view>

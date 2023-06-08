@@ -1,41 +1,14 @@
 # GPT微信聊天小程序
 
 #### 介绍
-基于GPT的微信聊天小程序，具备聊天记忆。模型基于GPT2进行开关。
+基于GPT的微信聊天小程序，具备聊天记忆。模型基于GPT2进行开发。
+
+关于更多开发细节可以查看我在CSDN发布的博文，博客名称：Huterox
+
 为什么不采用GPT3.5？
+
 1. 本次采用的GPT2是本地部署，打通，并提供服务的，虽然没有采用3.5或者是4，但是在技术实现难度上来说要比直接调用API“高级”。
 2. 作者没钱，搭桥不安全。
 3. 作为综合项目，调用API没啥意思，本地打通，为了完全可以尝试部署6B，等其他模型+本地知识库。
 
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+6.  的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)

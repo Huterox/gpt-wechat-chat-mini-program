@@ -1,0 +1,51 @@
+
+.page {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center center;
+  display: flex; /* 添加 */
+  justify-content: center; /* 添加 */
+  align-items: center; /* 添加 */
+}
+
+.list {
+  width: 80%; /* 修改 */
+  border-radius: 20px; /* 添加 */
+  overflow: hidden; /* 添加 */
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 2px solid #0e80eb;
+
+  border-radius: 20px; /* 保留 */
+  overflow: hidden; /* 保留 */
+}
+
+.right {
+  flex: 1;
+  margin-left: 20rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.time {
+  font-size: 28rpx; /* 修改 */
+  
+}
+.time {
+  margin-top: 10rpx;
+  font-size: 35rpx; /* 修改 */
+  color: rgba(20, 109, 224, 0.527); /* 修改 */
+  text-align: center; /* 添加 */
+  flex: 1; /* 添加 */
+}

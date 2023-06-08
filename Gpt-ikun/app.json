@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mycenter/mycenter",
+    "pages/histories/historyies"
+  ],
+  "requiredBackgroundModes": ["audio"],
+  "useExtendedLib": {
+    "weui":true
+  },
+  "usingComponents": {
+    "chat-box":"components/chatbox/index",
+    "mp-actionSheet": "weui-miniprogram/actionsheet/actionsheet"
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "虚拟女友-001A测",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/histories/historyies",
+        "iconPath": "./images/histories.png",
+        "selectedIconPath": "./images/histories1.png"
+      },
+      {
+      "pagePath": "pages/index/index",
+      "iconPath": "./images/chat.png",
+      "selectedIconPath": "./images/chat1.png"
+    },
+    {
+      "pagePath": "pages/mycenter/mycenter",
+      "iconPath": "./images/mycenter.png",
+      "selectedIconPath": "./images/mycenter1.png"
+    }
+  ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "networkTimeout": {
+    "request": 60000,
+    "downloadFile": 60000
+  }
+}

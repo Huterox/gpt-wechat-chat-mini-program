@@ -1,0 +1,48 @@
+
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        service: gateway
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+
+        - id: ikunchat8250
+          uri: lb://ikunchat
+          predicates:
+            - Path=/api/ikunchat/**
+          filters:
+            #- 转发做拼接，去掉provide后缀，uri/** 而不是 uri/provide/**
+            - RewritePath=/api/ikunchat/(?<segment>.*),/$\{segment}
+        # 与之对于的还有 PrefixPath=/Huterox
+        #  当访问 http://localhost:8762/aaa，加上前缀就变成 http://localhost:8762/Huterox/aaa
+
+
+        - id: admin_route
+          uri: lb://renren-fast  # 网关负载均衡的发送到renren-fast
+          predicates:
+            - Path=/api/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/renren-fast/$\{segment}  #实现路径重写
+
+  ## 所有前端项目带  /api
+  ## http://localhost:88/api/captcha.jpg
+  ## http://localhost:8080/renren-fast/captcha.jpg
+
+
+
+  application:
+    name: gateway
+
+
+
+
+server:
+  port: 88
+
+
